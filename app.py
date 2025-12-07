@@ -3,8 +3,10 @@ import sqlite3
 import os
 import random
 import string
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 DB_NAME = "products.db"
 
 
